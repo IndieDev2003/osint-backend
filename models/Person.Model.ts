@@ -76,6 +76,7 @@ export const PersonSchema = new mongoose.Schema<IPerson>(
     note: { type: [PersonNotes], default: [] },
     vehicle: { type: [Vehicles], default: [] },
     account: { type: [Accounts], default: [] },
+    relatives: [{ type: Schema.Types.ObjectId, ref: "Person", default: [] }],
     associatedEvidence: [
       { type: Schema.Types.ObjectId, ref: "Evidence", default: [] },
     ],

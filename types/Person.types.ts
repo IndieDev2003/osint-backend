@@ -52,5 +52,6 @@ export interface IPerson extends Document {
   note: IPersonNote[];
   vehicle: IVehicle[];
   account: IAccount[];
+  relatives: mongoose.Types.ObjectId[];
   associatedEvidence: mongoose.Types.ObjectId[];
 }

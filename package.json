@@ -4,17 +4,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --hot index.ts",
-    "build": "bun build ./index.ts --outdir ./dist --target bun",
-    "compile": "bun build ./index.ts --compile --outfile ./dist/server"
+    "dev": "bun --hot server.ts",
+    "build": "bun build ./server.ts --outdir ./dist --target bun",
+    "compile": "bun build ./server.ts --compile --outfile ./dist/server"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.3"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "mongoose": "^9.7.0"
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0",
+    "zod": "^4.4.3"
   }
 }
