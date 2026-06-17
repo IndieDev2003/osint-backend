@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 import { PersonZodSchema } from "../types/Person.zod";
-import { Person } from "../models/Person.Model"; // Adjust this path to your actual Mongoose model
+import { Person } from "../models/Person.Model"; 
 
 export const addPerson = async (req: Request, res: Response) => {
   try {
